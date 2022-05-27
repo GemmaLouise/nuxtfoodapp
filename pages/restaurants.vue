@@ -3,10 +3,13 @@
     <div class="restaurantheading">
       <h1>Restaurants</h1>
 
-      <app-select @change="selectedRestaurant = $event" :selectoptions="restaurantOptions" />
+      <app-select
+        @change="selectedRestaurant = $event"
+        :selectoptions="restaurantOptions"
+      />
     </div>
 
-    <AppRestaurantInfo :datasource="filteredRestaurants" />
+    <app-restaurant-info :datasource="filteredRestaurants" />
   </main>
 </template>
 
@@ -42,5 +45,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>

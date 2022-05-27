@@ -11,7 +11,7 @@ export const state = () => ({
     totalPrice: state => {
       if (!state.cart.length) return 0;
 
-       // reduce = goes through each item and accumulates (ac short for accumulator)
+       // reduce = goes through each item and accumulates
       return state.cart.reduce((ac, next) => ac + +next.combinedPrice, 0);
     },
     totalItems: state => {
